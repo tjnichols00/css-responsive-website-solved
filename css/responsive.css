@@ -26,16 +26,10 @@
 
 @media (min-width: 359px) and (max-width: 1023px) {
   .top-navigation ul {
-    display: flex;
-    flex-flow: column wrap;
+    display: none;
   }
   .trigram:hover {
     font-size: 25px;
-  }
-  .trigram:hover .top-navigation ul {
-    display: flex;
-    flex-flow: row wrap;
-    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -54,27 +48,27 @@
 
   .portfolio-img-wrapper {
     max-width: 300px;
-    height: 150px;
+    height: 175px;
     border: 2px solid black;
   }
 
   .portfolio-item-info {
+    padding: 10px;
     max-width: 320px;
   }
   .teammates-list-wrapper {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    padding: 5%;
-    margin-left: 10%;
   }
   .teammate-img-wrapper {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    width: 220px;
-    height: 180px;
+    width: 300px;
+    height: 200px;
     border: 2px solid black;
   }
   .teammate {
@@ -83,6 +77,16 @@
   .teammate-data {
     align-items: center;
     text-align: center;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .social-icons span {
+    display: none;
+  }
+  .social-icons {
+    width: 0;
   }
 }
 
@@ -101,7 +105,7 @@
   }
 
   .portfolio-img-wrapper {
-    width: 500px;
+    width: 450px;
     height: 250px;
     border: 2px solid black;
   }
@@ -131,6 +135,16 @@
     width: 160px;
     padding-top: 5%;
     padding-right: 15%;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .social-icons span {
+    display: none;
+  }
+  .social-icons {
+    width: 0;
   }
 }
 
